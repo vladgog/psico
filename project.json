@@ -1,0 +1,116 @@
+{
+  "title": "FilosofÃ­a",
+  "author": "Luis Antonio Cruz PÃ©rez",
+  "date": "25/04/11",
+  "langCodes": [
+    "es"
+  ],
+  "languages": {
+    "ca": "espanyol",
+    "es": "español",
+    "en": "Spanish"
+  },
+  "areaCodes": [
+    "soc",
+    "div"
+  ],
+  "areas": {
+    "ca": "Ciències socials, Diversos",
+    "es": "Ciencias sociales, Diversos",
+    "en": "Social sciences, Miscellaneous"
+  },
+  "levelCodes": [
+    "BTX"
+  ],
+  "levels": {
+    "ca": "Batxillerat (16-18)",
+    "es": "Bachillerato (16-18)",
+    "en": "High school (16-18)"
+  },
+  "description": {
+    "ca": "Projecte d'activitats que dÃ³na un repÃ s a les diferents corrents filosÃ²fiques i filÃ²sofs de la histÃ²ria: \n<ul> \n <li>Grecs <\/li>\n <li>Alemanys <\/li>\n <li>Xinesos <\/li>\n <li>... <\/li>\n<\/ul>",
+    "es": "Proyecto de actividades que da un repaso a las diferentes corrientes filosÃ³ficas y filÃ³sofos de la historia: \n<ul> \n <li>Griegos <\/li>\n <li>Alemanes <\/li>\n <li>Chinos <\/li>\n <li>... <\/li>\n<\/ul>",
+    "en": "Project of activities about the different philosophical and philosophers of the history: \n<ul> \n <li>Greek philosophers <\/li>\n <li>German philosophers <\/li>\n <li>Chinese philosophers <\/li>\n <li>... <\/li>\n<\/ul>"
+  },
+  "license": {
+    "ca": "Aquesta obra està sota una llicència de Creative Commons <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>",
+    "es": "Esta obra está bajo una licencia de Creative Commons <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>",
+    "en": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "ca",
+    "es",
+    "en"
+  ],
+  "cover": "freud1-resized1.jpg",
+  "thumbnail": "freud1-resized1.jpg",
+  "mainFile": "freud.jclic",
+  "activities": 38,
+  "mediaFiles": 56,
+  "totalSize": 3694308,
+  "files": [
+    "aria-freud.mid",
+    "aria.mid",
+    "aristo_1-freud.bmp",
+    "aristo_1.bmp",
+    "chinese_dance-freud.mid",
+    "chinese_dance.mid",
+    "claro_de_luna-freud.mid",
+    "claro_de_luna.mid",
+    "confucio-freud.gif",
+    "confucio.gif",
+    "fantasie-freud.mid",
+    "fantasie.mid",
+    "favicon.ico",
+    "filoso_1-freud.gif",
+    "filoso_1.gif",
+    "filosofi.jclic",
+    "filosofi.jclic.js",
+    "flutes-freud.mid",
+    "flutes.mid",
+    "french-freud.mid",
+    "french.mid",
+    "freud.jclic",
+    "freud.jclic.js",
+    "freud1-resized1.jpg",
+    "full-freud.mid",
+    "full.mid",
+    "hera-freud.gif",
+    "hera.gif",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "italian_concerto-freud.mid",
+    "italian_concerto.mid",
+    "les_adieux-freud.mid",
+    "les_adieux.mid",
+    "miniature_overture-freud.mid",
+    "miniature_overture.mid",
+    "mozart-freud.mid",
+    "mozart.mid",
+    "nocturne-freud.mid",
+    "nocturne.mid",
+    "platon-freud.bmp",
+    "platon-freud.gif",
+    "platon.bmp",
+    "platon.gif",
+    "platon2-freud.gif",
+    "platon2.gif",
+    "project.json",
+    "requiem-freud.mid",
+    "requiem.mid",
+    "romance-freud.mid",
+    "romance.mid",
+    "schope_1-freud.bmp",
+    "schope_1.bmp",
+    "socrates-freud.gif",
+    "socrates.gif",
+    "string-freud.mid",
+    "string.mid",
+    "vida_d_1-freud.gif",
+    "vida_d_1.gif",
+    "waldstein-freud.mid",
+    "waldstein.mid"
+  ]
+}

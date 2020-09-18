@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="freud" version="0.1.3">
+ <settings>
+  <title>FilosofÃ­a</title>
+  <revision description="created" date="4/25/11" />
+  <revision description="Publicación en la zonaClic (http://clic.xtec.cat)" date="7/15/11">
+   <author name="Equip Clic" mail="clic@xtec.cat" organization="Àrea TIC - Departament d'Educació" />
+  </revision>
+  <author name="Luis Antonio Cruz PÃ©rez" />
+  <language>es</language>
+  <description>
+   <p>Projecte d'activitats que dÃ³na un repÃ s a les diferents corrents filosÃ²fiques i filÃ²sofs de la histÃ²ria: </p>
+   <p>&lt;ul&gt; </p>
+   <p> &lt;li&gt;Grecs &lt;/li&gt;</p>
+   <p> &lt;li&gt;Alemanys &lt;/li&gt;</p>
+   <p> &lt;li&gt;Xinesos &lt;/li&gt;</p>
+   <p> &lt;li&gt;... &lt;/li&gt;</p>
+   <p>&lt;/ul&gt;</p>
+  </description>
+  <descriptors area-codes="soc, div" level-codes="BTX">aprendizaje de la filosofía, corriente filosófica</descriptors>
+  <cover file="freud1-resized1.jpg" />
+  <thumb file="freud1-resized1.jpg" />
+  <icon16 file="favicon.ico" />
+  <icon72 file="icon-72.png" />
+  <icon192 file="icon-192.png" />
+  <meta_langs>ca,es,en</meta_langs>
+  <descriptions>
+   <description language="ca">
+    <p>Projecte d'activitats que dÃ³na un repÃ s a les diferents corrents filosÃ²fiques i filÃ²sofs de la histÃ²ria: </p>
+    <p>&lt;ul&gt; </p>
+    <p> &lt;li&gt;Grecs &lt;/li&gt;</p>
+    <p> &lt;li&gt;Alemanys &lt;/li&gt;</p>
+    <p> &lt;li&gt;Xinesos &lt;/li&gt;</p>
+    <p> &lt;li&gt;... &lt;/li&gt;</p>
+    <p>&lt;/ul&gt;</p>
+   </description>
+   <description language="es">
+    <p>Proyecto de actividades que da un repaso a las diferentes corrientes filosÃ³ficas y filÃ³sofos de la historia: </p>
+    <p>&lt;ul&gt; </p>
+    <p> &lt;li&gt;Griegos &lt;/li&gt;</p>
+    <p> &lt;li&gt;Alemanes &lt;/li&gt;</p>
+    <p> &lt;li&gt;Chinos &lt;/li&gt;</p>
+    <p> &lt;li&gt;... &lt;/li&gt;</p>
+    <p>&lt;/ul&gt;</p>
+   </description>
+   <description language="en">
+    <p>Project of activities about the different philosophical and philosophers of the history: </p>
+    <p>&lt;ul&gt; </p>
+    <p> &lt;li&gt;Greek philosophers &lt;/li&gt;</p>
+    <p> &lt;li&gt;German philosophers &lt;/li&gt;</p>
+    <p> &lt;li&gt;Chinese philosophers &lt;/li&gt;</p>
+    <p> &lt;li&gt;... &lt;/li&gt;</p>
+    <p>&lt;/ul&gt;</p>
+   </description>
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="portada">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="mitohera.txa">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@textGrid.CrossWord" name="alemanes.crw" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0xFFFFFF" background="0x0000A0" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="nocturne.mid" />
+     <p>Encuentra a los filósofos alemanes </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0xFFFFFF" background="0x0000A0" />
+     </style>
+     <p>Buen trabajo</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x6666FF">
+     <image name="schope~1.bmp" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x6666FF" border="false">
+     <gradient source="0x6666FF" dest="0x99FFFF" angle="216" />
+    </window>
+   </settings>
+   <textGrid rows="15" columns="9" cellWidth="26.0" cellHeight="24.0" border="true">
+    <style>
+     <font family="Gulim" size="26" bold="true" />
+     <color foreground="0xFFFFFF" background="0x8080FF" />
+    </style>
+    <text>
+     <row>SCHOPENHAUER***</row>
+     <row>*******E*******</row>
+     <row>**HEIDEGGER**L*</row>
+     <row>*****NIETZSCHE*</row>
+     <row>*******L*****I*</row>
+     <row>MARX*********B*</row>
+     <row>***********KANT</row>
+     <row>***WITTGENSTEIN</row>
+     <row>*************Z*</row>
+    </text>
+   </textGrid>
+   <cells rows="9" cols="1" cellWidth="200.0" cellHeight="75.0" border="false" id="acrossClues">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="9" />
+    <cell id="0" item="0">
+     <p>Padre del pesimismo</p>
+    </cell>
+    <cell id="2" item="0">
+     <p>Padre del existencialismo alemán</p>
+    </cell>
+    <cell id="3" item="0">
+     <p>Padre del pragmatismo ateo</p>
+    </cell>
+    <cell id="5" item="0">
+     <p>Materialismo histórico</p>
+    </cell>
+    <cell id="6" item="0">
+     <p>Padre de la Epistemología</p>
+    </cell>
+    <cell id="7" item="0">
+     <p>Lógica alemana</p>
+    </cell>
+   </cells>
+   <cells rows="15" cols="1" cellWidth="200.0" cellHeight="75.0" border="false" id="downClues">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <cell id="0" item="0" />
+    <cell id="7" item="0">
+     <p>Caída del Idealismo</p>
+    </cell>
+    <cell id="13" item="0">
+     <p>Teoría de las monadas</p>
+    </cell>
+   </cells>
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="aristote.puz" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0xFFFFFF" background="0x808040" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="waldstein.mid" />
+     <p>ORDENA EL ROMPECABEZAS DE ESTE FAMOSO FILOSOFO </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0xFFFFFF" background="0x808040" />
+     </style>
+     <p>BIEN HECHO. HAZ DESCUBIERTO A ARISTOTELES</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF0000">
+     <gradient source="0xFF0000" dest="0xFF6633" angle="72" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false" />
+   </settings>
+   <cells rows="4" cols="4" border="true" image="aristo~1.bmp">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="4" rows="4" baseWidthFactor="0.67" toothHeightFactor="0.68" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.HolePuzzle" name="confucio.puz" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0xFFFFFF" background="0x008040" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="chinese_dance.mid" />
+     <p>ORDENA EL ROMPECABEZAS DE ESTE FAMOSO FILOSOFO CHINO </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0xFFFFFF" background="0x008040" />
+     </style>
+     <p>BIEN HECHO. HAZ DESCUBIERTO A CONFUCIO</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF9F9F">
+     <gradient source="0xFF0000" dest="0xFF6633" angle="72" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false" />
+   </settings>
+   <cells rows="4" cols="5" border="true" image="confucio.gif">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.CrossWord" name="contempo.crw" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0xFFFF80" background="0x800080" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="requiem.mid" />
+     <p>Encuentra los nombres de los filósofos contempóraneos </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0xFFFF80" background="0x800080" />
+     </style>
+     <p>Bien hecho</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="filoso~1.gif" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false" />
+   </settings>
+   <textGrid rows="19" columns="12" cellWidth="21.0" cellHeight="26.0" border="true">
+    <style>
+     <font family="Dialog" size="35" bold="true" />
+     <color foreground="0x800080" background="0xFFFF80" />
+    </style>
+    <text>
+     <row>SIGMUNDFREUD*******</row>
+     <row>*N*****************</row>
+     <row>*C*****************</row>
+     <row>*O*****************</row>
+     <row>*N*****************</row>
+     <row>*S*****************</row>
+     <row>*C*****************</row>
+     <row>*I*****************</row>
+     <row>*E*****************</row>
+     <row>*N*****************</row>
+     <row>*T*****************</row>
+     <row>*E*****************</row>
+    </text>
+   </textGrid>
+   <cells rows="9" cols="1" cellWidth="200.0" cellHeight="75.0" border="false" id="acrossClues">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="9" />
+    <cell id="11" item="1" />
+    <cell id="11" item="0" />
+    <cell id="10" item="1" />
+    <cell id="10" item="0" />
+    <cell id="9" item="1" />
+    <cell id="9" item="0" />
+    <cell id="8" item="1" />
+    <cell id="8" item="0" />
+    <cell id="6" item="1" />
+    <cell id="6" item="0" />
+    <cell id="4" item="1" />
+    <cell id="4" item="0" />
+    <cell id="3" item="1" />
+    <cell id="3" item="0" />
+    <cell id="2" item="1" />
+    <cell id="2" item="0" />
+    <cell id="1" item="1" />
+    <cell id="1" item="0" />
+    <cell id="5" item="1" />
+    <cell id="5" item="0" />
+    <cell id="7" item="1" />
+    <cell id="7" item="0" />
+    <cell id="6" item="3" />
+    <cell id="0" item="0">
+     <p>via regia para llegar al incosciente</p>
+    </cell>
+   </cells>
+   <cells rows="21" cols="1" cellWidth="200.0" cellHeight="75.0" border="false" id="downClues">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <cell id="4" item="1" />
+    <cell id="5" item="1" />
+    <cell id="6" item="1" />
+    <cell id="7" item="1" />
+    <cell id="8" item="1" />
+    <cell id="9" item="1" />
+    <cell id="10" item="1" />
+    <cell id="11" item="1" />
+    <cell id="13" item="0" />
+    <cell id="14" item="0" />
+    <cell id="15" item="0" />
+    <cell id="16" item="0" />
+    <cell id="17" item="0" />
+    <cell id="18" item="0" />
+    <cell id="3" item="1" />
+    <cell id="2" item="1" />
+    <cell id="12" item="0" />
+    <cell id="0" item="1" />
+    <cell id="1" item="0">
+     <p>estructura de la psique</p>
+    </cell>
+    <cell id="11" item="0" />
+    <cell id="9" item="0" />
+    <cell id="7" item="0" />
+    <cell id="6" item="0" />
+    <cell id="5" item="0" />
+    <cell id="4" item="0" />
+    <cell id="3" item="0" />
+    <cell id="2" item="0" />
+    <cell id="12" item="2" />
+    <cell id="11" item="3" />
+    <cell id="0" item="0" />
+    <cell id="8" item="0" />
+    <cell id="10" item="0">
+     <p>Padre del Pragmatismo</p>
+    </cell>
+   </cells>
+   <layout position="BA" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="corrient.sop" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x800080" background="0x8080C0" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="italian_concerto.mid" />
+     <p>ENCUENTRA LAS CORRIENTES FILOSOFICAS </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0x800080" background="0x8080C0" />
+     </style>
+     <p>MUY BIEN HECHO</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x400080">
+     <gradient source="0x330033" dest="0x9900FF" angle="27" cycles="7" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x8000FF" border="false" />
+   </settings>
+   <textGrid rows="21" columns="10" cellWidth="22.0" cellHeight="24.0" border="true">
+    <style>
+     <font family="Arial" size="19" bold="true" />
+     <color foreground="0xFFFF00" background="0x8000FF" />
+    </style>
+    <text>
+     <row>IDEALISMO****P*A****N</row>
+     <row>*************E*X****I</row>
+     <row>********ETICAS*I****H</row>
+     <row>*************I*O****I</row>
+     <row>EMPIRISMO****M*L****L</row>
+     <row>*************I*O****I</row>
+     <row>ECOLASTICA***S*G****S</row>
+     <row>*************M*I****M</row>
+     <row>*************O*A****O</row>
+     <row>**LOGICA*************</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">NIHILISMO</clue>
+    <clue id="1">ETICA</clue>
+    <clue id="2">IDEALISMO</clue>
+    <clue id="3">EMPIRISMO</clue>
+    <clue id="4">ECOLASTICA</clue>
+    <clue id="5">LOGICA</clue>
+    <clue id="6">PESIMISMO </clue>
+    <clue id="7">AXIOLOGIA</clue>
+   </clues>
+  </activity>
+  <activity class="@textGrid.WordSearch" name="filogra2.sop" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x00FFFF" background="0x000080" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="full.mid" />
+     <p>ENCUENTRA LAS PALABRAS SOBRE FILOSOFIA EN GENERAL </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0x00FFFF" background="0x000080" />
+     </style>
+     <p>BIEN HECHO</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x0080C0">
+     <gradient source="0x006666" dest="0x00CCCC" angle="66" cycles="13" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xB9F091" border="false" />
+   </settings>
+   <textGrid rows="21" columns="10" cellWidth="23.0" cellHeight="22.0" border="true">
+    <style>
+     <font family="Gulim" size="28" bold="true" />
+     <color foreground="0x002D00" background="0xBBFFFF" />
+    </style>
+    <text>
+     <row>ARISTOTELES******P**G</row>
+     <row>D****************R**O</row>
+     <row>*E***************O**R</row>
+     <row>**M**SCHOPENHAUERT**G</row>
+     <row>S**O*************A**I</row>
+     <row>*O**C******A*****G**A</row>
+     <row>**P**R*****M*****O**S</row>
+     <row>***H**I****O*****R***</row>
+     <row>****I**T***R*****A***</row>
+     <row>*****A**O*SOCRATES***</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">AMOR</clue>
+    <clue id="1">SOCRATES</clue>
+    <clue id="2">DEMOCRITO</clue>
+    <clue id="3">SOPHIA</clue>
+    <clue id="4">ARISTOTELES</clue>
+    <clue id="5">SCHOPENHAUER</clue>
+    <clue id="6">PROTAGORAS</clue>
+    <clue id="7">GORGIAS</clue>
+   </clues>
+  </activity>
+  <activity class="@textGrid.WordSearch" name="filogral.sop" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0xFFFFFF" background="0x8080FF" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="miniature_overture.mid" />
+     <p> ENCUENTRA LAS PALABRAS RELACIONADAS CON LA FILOSOFIA EN GENERAL </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0xFFFFFF" background="0x8080FF" />
+     </style>
+     <p>EXCELENTE</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFA448">
+     <gradient source="0x999900" dest="0xFF9933" angle="89" cycles="9" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false" />
+   </settings>
+   <textGrid rows="21" columns="10" cellWidth="22.0" cellHeight="23.0" border="true">
+    <style>
+     <font family="Verdana" size="35" bold="true" />
+     <color foreground="0x400000" background="0x808000" />
+    </style>
+    <text>
+     <row>E***A***C******H*D**F</row>
+     <row>*M***G***O*****U*I**I</row>
+     <row>**P***O***N****M*A**L</row>
+     <row>***E***R***O***A*L**O</row>
+     <row>****D***A***C**N*E**S</row>
+     <row>A****O*******E*I*C**O</row>
+     <row>*T****C*******RS*T**F</row>
+     <row>**O****L*******M*I**O</row>
+     <row>***M****E******O*C***</row>
+     <row>****O****S*******A***</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">ATOMO</clue>
+    <clue id="1">EMPEDOCLES</clue>
+    <clue id="2">AGORA</clue>
+    <clue id="3">CONOCER</clue>
+    <clue id="4">DIALECTICA</clue>
+    <clue id="5">HUMANISMO</clue>
+    <clue id="6">FILOSOFO</clue>
+   </clues>
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="filosgr2.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x00FF00" background="0x000000" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="mozart.mid" />
+     <p>RELACIONA LA INFORMACIÓN DE LAS DIVERSAS CORRIENTES FILOSOFICAS </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0x00FF00" background="0x000000" />
+     </style>
+     <p>BIEN HECHO.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x80FF80">
+     <gradient source="0xFF3300" dest="0x663300" angle="50" cycles="4" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false" />
+   </settings>
+   <cells rows="2" cols="5" cellWidth="140.0" cellHeight="100.0" border="true" id="primary">
+    <style>
+     <color background="0x80FF00" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell id="0">
+     <p>¿Qué es la Axiología?</p>
+    </cell>
+    <cell id="1">
+     <p>¿Quiénes se encuentran en el apogeo de la Filosofía?</p>
+    </cell>
+    <cell id="2">
+     <p>¿Qué ramas surgen en la decadencia de la Filosofía?</p>
+    </cell>
+    <cell id="3">
+     <p>¿Cuál era la pregunta a resolver de los presocráticos?</p>
+    </cell>
+    <cell id="4">
+     <p>¿Cuál es la respuesta de Tales?</p>
+    </cell>
+    <cell id="5">
+     <p>¿Cuál es la respuesta de Heráclito?</p>
+    </cell>
+    <cell id="0">
+     <p>¿Qué es el Escepticismo?</p>
+    </cell>
+    <cell id="0">
+     <p>¿Qué es el Eclecticismo?</p>
+    </cell>
+    <cell id="0">
+     <p>Para la Filosofía cristiana ¿Qué es Dios?</p>
+    </cell>
+    <cell id="0">
+     <p>Para la Escolástica ¿Qué es el hombre?</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="5" cellWidth="142.0" cellHeight="128.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="19" bold="true" />
+     <color foreground="0x80FF00" background="0x8000FF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell>
+     <p>Tiene como objeto de reflexión los temas generales de los valores.</p>
+    </cell>
+    <cell>
+     <p>Sócrates, Platón y Aristóteles.</p>
+    </cell>
+    <cell>
+     <p>Hedonismo, Estoicismo, Eclecticismo y Escepticismo.</p>
+    </cell>
+    <cell>
+     <p>¿Cuál es el elemento o principio básico que constituye todas las cosas?</p>
+    </cell>
+    <cell>
+     <p>El principio universal está en el agua.</p>
+    </cell>
+    <cell>
+     <p>La esencia de las cosas es el fuego.</p>
+    </cell>
+    <cell>
+     <p>Consiste en la duda acerca de todo.</p>
+    </cell>
+    <cell>
+     <p>Consiste en conservar una postura abierta a todas las influencias filosóficas.</p>
+    </cell>
+    <cell>
+     <p>Dios es absolutamente diferente a las cosas de este mundo y no hay lugar a la confusión propia del panteísmo.</p>
+    </cell>
+    <cell>
+     <p>El hombre es una síntesis de materia y espíritu.</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="filosgra.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="18" />
+      <color foreground="0xFF80FF" background="0x000000" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="claro_de_luna.mid" />
+     <p>ELIGE LA RESPUESTA CORRECTA DE DIFERENTES CORRIENTES FILOSOFICAS </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="18" />
+      <color foreground="0xFF80FF" background="0x000000" />
+     </style>
+     <p>FELICIDADES</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFA8FF">
+     <image name="vida_d~1.gif" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false" />
+   </settings>
+   <cells rows="5" cols="2" cellWidth="165.0" cellHeight="116.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="19" />
+     <color background="0xFF80FF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>Defina etimológicamente a la Filosofía.</p>
+    </cell>
+    <cell>
+     <p>¿Cuál es la Filosofía de oriente?</p>
+    </cell>
+    <cell>
+     <p>¿Cuál es la Filosofía de occidente?</p>
+    </cell>
+    <cell>
+     <p>¿Qué es la Ontología?</p>
+    </cell>
+    <cell>
+     <p>¿Qué es la Gnoseología?</p>
+    </cell>
+    <cell>
+     <p>¿Qué es la Lógica?</p>
+    </cell>
+    <cell>
+     <p>¿Qué es el Eudemonismo?</p>
+    </cell>
+    <cell>
+     <p>¿Cuáles son las ramas del Helenismo?</p>
+    </cell>
+    <cell>
+     <p>¿Qué es el Estoicismo?</p>
+    </cell>
+    <cell>
+     <p>¿Qué es el Hedonismo?</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="2" cellWidth="181.0" cellHeight="116.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="34" />
+     <color foreground="0xFF80FF" background="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell>
+     <p>Philos (amor) Sophia (sabiduría) "Amor a la sabiduría"</p>
+    </cell>
+    <cell>
+     <p>En esta Filosofía impera el desarrollo del espíritu como entidad suprema de todas las cosas y la humildad ante todo.</p>
+    </cell>
+    <cell>
+     <p>En esta Filosofía predomina la razón y el uso de la misma como arma para rebatir a otros autores.</p>
+    </cell>
+    <cell>
+     <p>Es la parte de la Filosofía que trata del ser en cuanto al ser, trata del ser en general, proviene del griego On, Ontos (ser) y Logos, Logía (tratado)</p>
+    </cell>
+    <cell>
+     <p>Aborda los problemas acerca del conocimiento.</p>
+    </cell>
+    <cell>
+     <p>Se encarga de investigar las leyes y formas del pensamiento, así como los métodos para desarrollar el conocimiento.</p>
+    </cell>
+    <cell>
+     <p>El sistema ético de Aristóteles porqué está centrado en la consecución de la felicidad</p>
+    </cell>
+    <cell>
+     <p>Estoicismo, Hedonismo, Escepticismo y Eclecticismo</p>
+    </cell>
+    <cell>
+     <p>Cultiva la Lógica y su cosmovisión quiere ser puramente racional</p>
+    </cell>
+    <cell>
+     <p>Propone el placer como valor supremo y ante el cual se han de subordinar todos los demás</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@textGrid.CrossWord" name="griegos.crw" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x0080C0" background="0x000000" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="french.mid" />
+     <p>Encuentra los nombres de los filósofos griegos </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0x0080C0" background="0x000000" />
+     </style>
+     <p>Bien hecho</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="vida_d~1.gif" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <textGrid rows="20" columns="10" cellWidth="23.0" cellHeight="25.0" border="true">
+    <style>
+     <font family="Segoe UI" size="35" bold="true" />
+     <color foreground="0x8000FF" background="0xFFFF80" />
+    </style>
+    <text>
+     <row>PITAGORAS*A*********</row>
+     <row>L**N****O*N*********</row>
+     <row>A**A****C*A*********</row>
+     <row>T**X****R*X*********</row>
+     <row>O**A****ARISTOTELES*</row>
+     <row>N**G****T*M*********</row>
+     <row>***O****E*EMPEDOCLES</row>
+     <row>***R****S*N*********</row>
+     <row>***A*****HERACLITO**</row>
+     <row>***S******S*********</row>
+    </text>
+   </textGrid>
+   <cells rows="10" cols="1" cellWidth="200.0" cellHeight="75.0" border="false" id="acrossClues">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell id="0" item="0">
+     <p>Dijo que el origen de todas las cosas son los números</p>
+    </cell>
+    <cell id="0" item="1">
+     <p> Primera letra del alfabeto</p>
+    </cell>
+    <cell id="4" item="0">
+     <p>Cuarta vocal</p>
+    </cell>
+    <cell id="4" item="1">
+     <p> Primera vocal</p>
+    </cell>
+    <cell id="4" item="2">
+     <p> Padre de la lógica</p>
+    </cell>
+    <cell id="6" item="0">
+     <p>Cuarta vocal</p>
+    </cell>
+    <cell id="6" item="1">
+     <p> Segunda vocal</p>
+    </cell>
+    <cell id="6" item="2">
+     <p> Dijo que la suma de los cuatro elementos es el origen de todas las cosas</p>
+    </cell>
+    <cell id="8" item="0">
+     <p>Primera vocal</p>
+    </cell>
+    <cell id="8" item="1">
+     <p> Dijo que el origen de todas las cosas es el fuego</p>
+    </cell>
+   </cells>
+   <cells rows="20" cols="1" cellWidth="200.0" cellHeight="75.0" border="false" id="downClues">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <cell id="0" item="0">
+     <p>Dijo que las ideas es lo más perfecto del mundo</p>
+    </cell>
+    <cell id="3" item="0">
+     <p>Dijo que la celula es el origen de todas las cosas</p>
+    </cell>
+    <cell id="8" item="0">
+     <p>Dijo: conociéndote a ti mismo en base a la mayéutica</p>
+    </cell>
+    <cell id="10" item="0">
+     <p>Dijo que el origen de todas las cosas es el aire</p>
+    </cell>
+   </cells>
+   <layout position="BA" />
+  </activity>
+  <activity class="@panels.Explore" name="griego~1.ass" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xFF0000" />
+     </style>
+     <p>APRENDE LA RESPUESTA DE DIVERSAS CORRIENTES FILOSOFICAS</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xFF0000" />
+     </style>
+     <p>FELICIDADES</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x0000A0">
+     <gradient source="0xFFFF00" dest="0xFF6600" angle="155" cycles="6" />
+     <counters time="true" actions="false" score="false" />
+    </container>
+    <window bgColor="0x8080FF" border="true" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="128.0" cellHeight="106.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="18" bold="true" />
+     <color foreground="0xFF0000" background="0xFFFF80" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0">
+     <p>¿Cual es la respuesta de Empédocles?</p>
+    </cell>
+    <cell id="1">
+     <p>¿Cual es la respuesta de Demócrito?</p>
+    </cell>
+    <cell id="2">
+     <p>¿Qué es un sofista?</p>
+    </cell>
+    <cell id="3">
+     <p>Explicación del relativismo de Protágoras</p>
+    </cell>
+    <cell id="4">
+     <p>Explicación de la tesis de Calicles</p>
+    </cell>
+    <cell id="5">
+     <p>Explicación de la tesis de Gorgias</p>
+    </cell>
+    <cell id="6">
+     <p>¿Qué es el bien y el mal según la Escolástica?</p>
+    </cell>
+    <cell id="7">
+     <p>¿Qué es el sentido comunitario según la Escolástica?</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="2" cellWidth="138.0" cellHeight="100.0" border="false" id="secondary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0xFFFF80" background="0xFF0000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell>
+     <p>Con la combinación de los cuatro elementos se consigue la inmensa variedad de las cosas</p>
+    </cell>
+    <cell>
+     <p>Las cosas están compuestas por partículas indivisibles, llamadas átomos</p>
+    </cell>
+    <cell>
+     <p>Es aquel que juega con la verdad y toma por costumbre la falsedad con apariencias de verdad y correción</p>
+    </cell>
+    <cell>
+     <p>El hombre es la medida de todas las cosas</p>
+    </cell>
+    <cell>
+     <p>La ley es del más fuerte</p>
+    </cell>
+    <cell>
+     <p>Negación de toda creencia</p>
+    </cell>
+    <cell>
+     <p>El bien es realizar el amor de la benevolencia, el mal es la privación de ese amor.</p>
+    </cell>
+    <cell>
+     <p>La comunidad así formada es la Iglesia, cuya cabeza es Cristo y junto a la humanidad se vuelve un organismo unificado.</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.Order" name="mitohera.txa" code="" type="orderParagraphs">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0xFF0080" background="0xAAAAFF" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="fantasie.mid" />
+     <p>Pon en orden los párrafos para leer el mito de Hera y sus hijos </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0xFF0080" background="0xAAAAFF" />
+     </style>
+     <p>Bien hecho</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="hera.gif" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <size width="540" height="470" />
+    </window>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" foreground="0x0000FF" italic="false" family="Arial" tabWidth="16" background="0xFFAAFF" size="17" bold="false" />
+    <style name="target" base="default" foreground="0xFF6699" target="true" background="0x0000FF" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p foreground="0x0000FF" italic="false" family="Arial" background="0xFFAAFF" size="17" bold="false">
+      <text foreground="0x0000FF" italic="false" family="Arial" background="0xFFAAFF" size="17" bold="false">HERA Y SUS HIJOS</text>
+     </p>
+     <p foreground="0x0000FF" italic="false" family="Arial" background="0xFFAAFF" size="17" bold="false">
+      <target>Hera, hija de Crono y Rea, nació en la isla de Samos o, según algunos, en Argos, y la crió en Arcadia Temeno, hijo de Pelasgo. Las Estaciones fueron sus nodrizas.</target>
+     </p>
+     <p foreground="0x0000FF" italic="false" family="Arial" background="0xFFAAFF" size="17" bold="false" />
+     <p foreground="0x0000FF" italic="false" family="Arial" background="0xFFAAFF" size="17" bold="false">
+      <target>Después de desterrar a su padre Crono, el hermano gemelo de Hera, Zeus, fue a verla en Cnosos, Creta, o según dicen algunos, en el monte Tórnax (llamado ahora Montaña del Cuco) en Argólide, donde la cortejó, al principio sin éxito.</target>
+     </p>
+     <p foreground="0x0000FF" italic="false" family="Arial" background="0xFFAAFF" size="17" bold="false" />
+     <p foreground="0x0000FF" italic="false" family="Arial" background="0xFFAAFF" size="17" bold="false">
+      <target>Ella se compadeció del dios solamente cuando éste se disfrazó de cuco enlodado, y le calentó cariñosamente en su seno. Allí él reasumió inmediatamente su verdadera forma y la violó, y ella se vio obligada a casarse con él, por vergüenza.</target>
+     </p>
+     <p foreground="0x0000FF" italic="false" family="Arial" background="0xFFAAFF" size="17" bold="false" />
+     <p foreground="0x0000FF" italic="false" family="Arial" background="0xFFAAFF" size="17" bold="false">
+      <target>Todos los dioses asistieron a la boda con regalos, entre los que destacó el de la Madre Tierra, quien le regaló a Hera un árbol con manzanas de oro, que luego guardaron las Hespérides en el jardín que Hera poseía en el monte Atlas.</target>
+     </p>
+     <p foreground="0x0000FF" italic="false" family="Arial" background="0xFFAAFF" size="17" bold="false" />
+     <p foreground="0x0000FF" italic="false" family="Arial" background="0xFFAAFF" size="17" bold="false">
+      <target>Ella y Zeus pasaron su noche de bodas en Samos, y esa noche duró trescientos años. Hera se baña regularmente en la fuente de Canatos, cerca de Argos, y así renueva su virginidad.</target>
+     </p>
+     <p foreground="0x0000FF" italic="false" family="Arial" background="0xFFAAFF" size="17" bold="false" />
+     <p foreground="0x0000FF" italic="false" family="Arial" background="0xFFAAFF" size="17" bold="false">
+      <target>De Hera y Zeus nacieron los dioses Ares, Hefesto y Hebe, aunque algunos dicen que Ares y su hermana gemela Eris fueron concebidos cuando Hera tocó cierta flor, y Hebe cuando tocó una lechuga, y que Hefesto también era su hijo partenogénito, prodigio que él no quiso creer hasta que la aprisionó en una silla mecánica con brazos que se cerraban alrededor del que se sentaba en ella, y así le obligó a jurar por el río Estigia que no mentía. Otros dicen que Hefesto era hijo suyo con Talos, el sobrino de Dédalo.</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@text.Complete" name="platon1.txa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xFF00FF" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="aria.mid" />
+     <p>Completa el texto sobre "La alegoría de la caverna" de Platón con la letra O </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xFF00FF" />
+     </style>
+     <p>¡¡¡Bien hecho!!! </p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="platon.bmp" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <size width="540" height="330" />
+    </window>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" foreground="0xFF80FF" italic="false" family="Consolas" tabWidth="16" background="0x000000" size="21" bold="false" />
+    <style name="target" base="default" foreground="0x000000" target="true" background="0xFF00FF" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">En una caverna </text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">bscura están vari</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">s prisi</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">ner</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">s atad</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">s desde la infancia, n</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> pueden ver la luz del día ni l</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">s </text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">bjet</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">s ni a las pers</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">nas del exteri</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">r, s</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">l</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> captan unas s</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">mbras que se pr</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">yectan en el f</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">nd</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> de la caverna. Afuera hay un camin</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> y más lej</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">s un fueg</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> que </text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">rigina esas s</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">mbras. Un</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> de l</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">s prisi</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">ner</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">s escapa y, al principi</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> queda deslumbrad</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> p</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">r la luz del día.</text>
+     </p>
+     <p foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">P</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">c</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> a p</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">c</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> se ac</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">stumbra a ver y a mirar maravillad</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> l</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">s </text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">bjet</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">s y pers</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">nas que antes ni s</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">spechaba, vuelve c</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">n sus c</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">mpañer</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">s, per</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> est</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">s n</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> creen l</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> que les narra, están c</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">nfundid</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">s, para ell</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false">s la única realidad es l</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> que ven dentr</text>
+      <target>o</target>
+      <text foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false"> de la caverna.</text>
+     </p>
+     <p foreground="0xFF80FF" italic="false" family="Consolas" background="0x000000" size="21" bold="false" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Identify" name="platon2.txa" code="" type="identifyChars">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="30" />
+      <color foreground="0x0000A0" background="0xFFA74F" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="string.mid" />
+     <p>Identifica la sílaba ES en la explicación de "La alegoría de la caverna" de Platón </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="30" />
+      <color foreground="0x0000A0" background="0xFFA74F" />
+     </style>
+     <p>¡¡¡Excelente!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="platon.gif" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <size width="540" height="330" />
+    </window>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" foreground="0xBF3F00" italic="false" family="Corbel" tabWidth="16" background="0xB3B3FF" size="23" bold="false" />
+    <style name="target" base="default" foreground="0x0000A0" target="true" background="0xFF9D3C" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false">
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false">Los prisioneros repr</text>
+      <target>es</target>
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false">entan la mayor parte de la humanidad, la caverna </text>
+      <target>es</target>
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false"> </text>
+      <target>es</target>
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false">te mundo sensible, el exterior </text>
+      <target>es</target>
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false"> el mundo intelectual, las ideas, el fuego repr</text>
+      <target>es</target>
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false">enta la idea más perfecta, que </text>
+      <target>es</target>
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false"> el bien. En </text>
+      <target>es</target>
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false">te mundo captamos solo las sombras de la verdadera y perfecta realidad, que </text>
+      <target>es</target>
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false">tán en un mundo aparte, invisible a nu</text>
+      <target>es</target>
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false">tras captacion</text>
+      <target>es</target>
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false"> cotidianas.</text>
+     </p>
+     <p foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false" />
+     <p foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false">
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false">El prisionero que se </text>
+      <target>es</target>
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false">capa </text>
+      <target>es</target>
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false"> él filósofo, que tiene la intuición de las ideas. Pero su enseñanza entre la gente queda simbolizada con el d</text>
+      <target>es</target>
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false">precio de los demás prisioneros ante sus narracion</text>
+      <target>es</target>
+      <text foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false"> acerca del mundo superior.</text>
+     </p>
+     <p foreground="0xBF3F00" italic="false" family="Corbel" background="0xB3B3FF" size="23" bold="false" />
+    </section>
+   </document>
+  </activity>
+  <activity class="@text.Identify" name="platon3.txa" code="" type="identifyWords">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x800000" background="0x808040" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="claro_de_luna.mid" />
+     <p>Identifica las palabras clave relacionadas con la teoría platónica de la adquisición de ideas </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0x800000" background="0x808040" />
+     </style>
+     <p>Muy bien</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="platon2.gif" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <size width="540" height="330" />
+    </window>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" foreground="0x800000" italic="false" family="Cordia New" tabWidth="16" background="0x808040" size="36" bold="true" />
+    <style name="target" base="default" foreground="0x808040" target="true" background="0x800000" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true">
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true">El origen del </text>
+      <target>conocimiento</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true"> esta en la </text>
+      <target>vida</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true"> </text>
+      <target>prenatal</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true">. El </text>
+      <target>alma</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true">  </text>
+      <target>espiritual</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true"> tiene la intuición de las ideas desde antes de venir a este mundo. Cuando el hombre nace su alma es encerrada en un cuerpo material, que es una cárcel para el alma. Debido a este desastroso acontecimiento, el alma olvida la </text>
+      <target>ciencia</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true"> </text>
+      <target>perfecta</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true"> que había contemplado, sin embargo, sus </text>
+      <target>ideas</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true"> </text>
+      <target>innatas</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true"> permanecen latentes en el fondo de su </text>
+      <target>conciencia</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true">. La  </text>
+      <target>experiencia</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true"> </text>
+      <target>sensible</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true"> es ocasión para que el alma recuerde las ideas olvidadas.</text>
+     </p>
+     <p foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true">
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true">El hombre en contacto con lo sensible, despierta de nuevo las ideas que estaban adormecidas en su </text>
+      <target>memoria</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true">, cuando un niño aprende matemáticas, astronomía, física etc; lo que sucede en el fondo es que esta recordando las ideas ya contempladas en la vida prenatal y olvidadas con el nacimiento.</text>
+     </p>
+     <p foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true">
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true">Platón sostiene que </text>
+      <target>aprender</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true"> es </text>
+      <target>recordar</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true">, esta tesis recibe el nombre de </text>
+      <target>anamnesis</target>
+      <text foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true">.</text>
+     </p>
+     <p foreground="0x800000" italic="false" family="Cordia New" background="0x808040" size="36" bold="true" />
+    </section>
+   </document>
+  </activity>
+  <activity class="@text.Order" name="platon4.txa" code="" type="orderWords" amongParagraphs="true">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="19" />
+      <color foreground="0xFFFF00" background="0x800080" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="flutes.mid" />
+     <p>Pon las palabras en su lugar para que comprendas como veía Platón el alma humana y las buenas acciones </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="19" />
+      <color foreground="0xFFFF00" background="0x800080" />
+     </style>
+     <p>Muy buen trabajo, filósofo</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xC0C0C0">
+     <image name="vida_d~1.gif" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="false">
+     <size width="600" height="420" />
+    </window>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" foreground="0x800080" italic="false" family="Dotum" tabWidth="16" background="0xFFFF59" size="19" bold="true" />
+    <style name="target" base="default" foreground="0xFFFF00" target="true" background="0x800080" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">El alma humana es </text>
+      <target>invisible</target>
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">, completamente diferente a la materia, es por lo tanto, </text>
+      <target>espiritual</target>
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">,  y su patria o sede es el mundo de las </text>
+      <target>ideas</target>
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">.</text>
+     </p>
+     <p foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true" />
+     <p foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">Con una nueva alegoría ilustra </text>
+      <target>Platón</target>
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true"> su concepción del alma humana, es el mito del carro alado, que se encuentra en el </text>
+      <target>Fedro</target>
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">, y dice así:</text>
+     </p>
+     <p foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true" />
+     <p foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">"Cada alma es como un coche tirado por dos caballos, (uno blanco y otro negro) y conducidos por un </text>
+      <target>auriga</target>
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true"> (cochero). El coche vuela en el espacio, el cochero representa la parte </text>
+      <target>racional</target>
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true"> del alma, el caballo blanco es </text>
+      <target>dócil</target>
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true"> y tira hacia arriba, y representa el apetito irascible, o tendencia </text>
+      <target>buena</target>
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">, de lucha hacia el </text>
+      <target>progreso</target>
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">, el caballo negro es </text>
+      <target>rebelde</target>
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">,  tira hacia abajo y representa el apetito concupiscible, o tendencia </text>
+      <target>mala</target>
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true"> hacia el </text>
+      <target>placer</target>
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">."</text>
+     </p>
+     <p foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true" />
+     <p foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">El aspecto racional se perfecciona con la virtud de la prudencia o </text>
+      <target>sabiduría</target>
+      <text foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true">, con la que se logra una correcta conducción del carro alado.</text>
+     </p>
+     <p foreground="0x800080" italic="false" family="Dotum" background="0xFFFF59" size="19" bold="true" />
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="portada" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="false">
+    <container bgColor="0x80FF80">
+     <gradient source="0xFF3300" dest="0x663300" angle="50" cycles="4" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="380.0" cellHeight="445.0" border="true">
+    <style>
+     <font family="Arial" size="72" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell txtAlign="middle,bottom" image="filoso~1.gif">
+     <p>FILOSOFÍA</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="schopenh.puz" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x00FFFF" background="0x000000" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="les_adieux.mid" />
+     <p>DESCUBRE QUIEN SE ENCUENTRA EN ESTA IMAGEN </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color foreground="0x00FFFF" background="0x000000" />
+     </style>
+     <p>BUEN TRABAJO. SCHOPENHAUER HA SIDO DESCUBIERTO</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x008080">
+     <gradient source="0x009900" dest="0x66FF66" angle="110" cycles="35" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x80FF80" border="false" />
+   </settings>
+   <cells rows="5" cols="5" border="true" image="schope~1.bmp">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@TriangularJigSaw" cols="5" rows="5" baseWidthFactor="0.33" toothHeightFactor="0.25" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="socrates.txa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0x00FF40" />
+     </style>
+     <media type="PLAY_MIDI" level="2" file="romance.mid" />
+     <p>Escribe las palabras o frases relacionadas a la corriente filosófica de Sócrates </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0x00FF40" />
+     </style>
+     <p>¡¡¡Muy bien hecho!!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x808040">
+     <image name="socrates.gif" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="540" height="330" />
+    </window>
+   </settings>
+   <document>
+    <style name="default" foreground="0x000000" italic="false" family="Century Gothic" tabWidth="16" background="0x00B32D" size="20" bold="false" />
+    <style name="target" base="default" foreground="0x000000" target="true" background="0xFFFF00" />
+    <style name="targetError" base="target" foreground="0xFFFFFF" background="0xFF0000" />
+    <section>
+     <p foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false">
+      <text foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false">El </text>
+      <target>
+       <answer>método socrático</answer>
+       <optionList>
+        <option>nihilismo</option>
+        <option>mayéutica</option>
+        <option>método socrático</option>
+       </optionList>
+       <text>método socrático</text>
+      </target>
+      <text foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false"> se basaba en preguntas, lo que obligaba a sus discípulos a pensar por cuenta propia y encontrar la solución a los problemas, principalmente de índole </text>
+      <target>
+       <answer>moral</answer>
+       <optionList>
+        <option>espiritual</option>
+        <option>moral</option>
+        <option>política</option>
+       </optionList>
+       <text>moral</text>
+      </target>
+      <text foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false">. Sócrates sostenía con sus amigos y conocidos un dialogo lleno de ironía y de sana e inteligente intención </text>
+      <target>
+       <answer>pedagógica</answer>
+       <optionList>
+        <option>pedagógica</option>
+        <option>psicológica</option>
+        <option>filosófica</option>
+       </optionList>
+       <text>pedagógica</text>
+      </target>
+      <text foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false">. </text>
+     </p>
+     <p foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false" />
+     <p foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false">
+      <text foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false">Él mismo llamó a su método </text>
+      <target>
+       <answer>mayéutica</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>mayéutica</text>
+      </target>
+      <text foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false"> que significa </text>
+      <target>
+       <answer>parto espiritual</answer>
+       <response fill="_" length="16" maxLength="16" />
+       <text>parto espiritual</text>
+      </target>
+      <text foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false">  y comparaba con su madre que era partera.</text>
+     </p>
+     <p foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false">
+      <text foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false">Su labor pedagógica consistía  no  tanto en enseñar, sino en lograr que los discípulos </text>
+      <target>
+       <answer>reflexionaran</answer>
+       <response fill="_" length="13" maxLength="13" />
+       <text>reflexionaran</text>
+      </target>
+      <text foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false"> y  extrajeran, por sí mismos sus propias</text>
+      <target>
+       <answer>ideas</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text> ideas</text>
+      </target>
+      <text foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false">, con la ayuda del maestro.</text>
+     </p>
+     <p foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false" />
+     <p foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false">
+      <target>
+       <answer>Mas vale sufrir una injusticia a cometerla</answer>
+       <response fill="_" length="42" maxLength="42" />
+       <info>
+        <cell txtAlign="left,middle" imgAlign="left,middle" width="140" height="100">
+         <style>
+          <color foreground="0x008000" background="0xFFFF80" />
+         </style>
+         <p>Frase relacionada a la injusticia</p>
+        </cell>
+       </info>
+       <text>Más vale sufrir una injusticia a cometerla</text>
+      </target>
+      <text foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false">, dicho pensamiento fue predicado en vida por Sócrates, se trata de un aforismo de altísimo valor moral. Lo corriente es la aplicación de la ley del talion: </text>
+      <target>
+       <answer>ojo por ojo y diente por diente</answer>
+       <response fill="_" length="31" maxLength="31" />
+       <info>
+        <cell txtAlign="left,middle" imgAlign="left,middle" width="140" height="100">
+         <style>
+          <color foreground="0x008000" background="0xFFFF80" />
+         </style>
+         <p>Frase relacionada con lo que tu hagas, tienes que pagar por ello.</p>
+        </cell>
+       </info>
+       <text>ojo por ojo y diente por diente</text>
+      </target>
+      <text foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false">. Pero Sócrates insistirá en que el valor moral debe cortar esa </text>
+      <target>
+       <answer>cadena de injusticias</answer>
+       <response fill="_" length="21" maxLength="21" />
+       <info>
+        <cell txtAlign="left,middle" imgAlign="left,middle" width="140" height="100">
+         <style>
+          <color foreground="0x008000" background="0xFFFF80" />
+         </style>
+         <p>Continuidad de la injusticia</p>
+        </cell>
+       </info>
+       <text>cadena de injusticias</text>
+      </target>
+      <text foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false">. </text>
+     </p>
+     <p foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false" />
+     <p foreground="0x000000" italic="false" family="Century Gothic" background="0x00B32D" size="20" bold="false" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="aristo~1.bmp" file="aristo_1-freud.bmp" />
+  <media name="platon.bmp" file="platon-freud.bmp" />
+  <media name="schope~1.bmp" file="schope_1-freud.bmp" />
+  <media name="confucio.gif" file="confucio-freud.gif" animated="false" />
+  <media name="filoso~1.gif" file="filoso_1-freud.gif" animated="false" />
+  <media name="hera.gif" file="hera-freud.gif" animated="false" />
+  <media name="platon.gif" file="platon-freud.gif" animated="false" />
+  <media name="platon2.gif" file="platon2-freud.gif" animated="false" />
+  <media name="socrates.gif" file="socrates-freud.gif" animated="false" />
+  <media name="vida_d~1.gif" file="vida_d_1-freud.gif" animated="false" />
+  <media name="favicon.ico" file="favicon.ico" />
+  <media name="freud1-resized1.jpg" file="freud1-resized1.jpg" />
+  <media name="aria.mid" file="aria-freud.mid" />
+  <media name="chinese_dance.mid" file="chinese_dance-freud.mid" />
+  <media name="claro_de_luna.mid" file="claro_de_luna-freud.mid" />
+  <media name="fantasie.mid" file="fantasie-freud.mid" />
+  <media name="flutes.mid" file="flutes-freud.mid" />
+  <media name="french.mid" file="french-freud.mid" />
+  <media name="full.mid" file="full-freud.mid" />
+  <media name="italian_concerto.mid" file="italian_concerto-freud.mid" />
+  <media name="les_adieux.mid" file="les_adieux-freud.mid" />
+  <media name="miniature_overture.mid" file="miniature_overture-freud.mid" />
+  <media name="mozart.mid" file="mozart-freud.mid" />
+  <media name="nocturne.mid" file="nocturne-freud.mid" />
+  <media name="requiem.mid" file="requiem-freud.mid" />
+  <media name="romance.mid" file="romance-freud.mid" />
+  <media name="string.mid" file="string-freud.mid" />
+  <media name="waldstein.mid" file="waldstein-freud.mid" />
+  <media name="icon-192.png" file="icon-192.png" />
+  <media name="icon-72.png" file="icon-72.png" />
+ </mediaBag>
+</JClicProject>
+
